@@ -1,0 +1,816 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Finance HTML-5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .headertxt {
+            padding: 15px;
+            background-color: crimson;
+            color: white;
+            text-align: center;
+        }
+
+        #hdtxt {
+            color: white;
+            font-size: 50px;
+        }
+    </style>
+   </head>
+
+   
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+         <div class="container-fluid">
+           <div class="headertxt header-sticky">
+               <h2 id="hdtxt">ICICI Bank Home Loan</h2>
+           </div>
+         </div>
+      
+    </header>
+  <body>
+ <main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><img src="bankslogo/ICICI-Bank.jpg" alt="ICICI Bank Home Loan" style="vertical-align:bottom;" /> ICICI Bank Home Loan</h1>
+                    <div><strong>ICICI Home Loans</strong>: Apply online  on lowest rates. Get Quotes on Eligibility, Per month EMI, Documents, Procedure through Deal4loans.com. ICICI Bank is the 4th largest bank in India in terms on home loan disbursals. Get <a href="https://www.deal4loans.com/home-loans.php">home loans</a> sanctioned online within 8 working hours under ICICI Express Home Loans Scheme. Check Application status for icici bank home loans online.
+                    </div>
+                    <h3>ICICI Home Loan Details:</h3>
+                    <table class="table table-striped table-bordered">
+                        <tbody>
+                            <tr>
+                                <td><strong>Interest Rates</strong></td>
+                                <td><strong>6.70% - 7.55%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Processing Fees</strong></td>
+                                <td>Flat Rs 3000 /- + AT</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pre payment Charges</strong></td>
+                                <td>Nil</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Loan Amount</strong></td>
+                                <td>upto 90% of market value</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lowest EMI</strong></td>
+                                <td>Rs.645 per lakh</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Min. Income</strong></td>
+                                <td>Rs.18000/- p.m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Loan Repayment</strong></td>
+                                <td>1 to 30 years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <link rel="stylesheet" href="css-range-slider/rangeslider_new.css">
+<link href="css/widget.css" type="text/css" rel="stylesheet" media="all" />
+<script Language="JavaScript" Type="text/javascript" src="scripts/common.js"></script>
+<script src="scripts/digitToWordConvert.js" type="text/javascript" language="javascript"></script>
+<!--<script src="js/homeloan.js"></script>-->
+<script src="homeloan-js/homeloan.min.js"></script>
+<script src="js-range-slider/range-slider-jquery-min.js"></script>
+<script src="js-range-slider/rangeslider.min.js"></script>
+<script>
+var sj = jQuery.noConflict();
+sj('input[type="range"]').rangeslider();
+sj('input[type="range"]').rangeslider('destroy');
+</script>
+<script>
+var hj = jQuery.noConflict();
+hj(function () {
+    var $document = hj(document),
+            selector = '[data-rangeslider]',
+            $element = hj(selector);
+    // Example functionality to demonstrate a value feedback
+    function valueOutput(element) {
+        var svalue = element.value,
+                output = element.parentNode.getElementsByTagName('output')[0];
+        document.getElementById('Loan_Amount').value = svalue;
+    }
+    for (var i = $element.length - 1; i >= 0; i--) {
+        valueOutput($element[i]);
+    }
+
+    $document.on('change', 'input[type="range"]', function (e) {
+        valueOutput(e.target);
+    });
+
+    $document.on('change', '#js-example-change-value input[type="number"]', function (e) {
+        var $inputRange = hj('input[type="range"]', e.target.parentNode),
+                value = hj('input[type="number"]', e.target.parentNode)[0].value;
+        $inputRange.val(value).change();
+    });
+    // Basic rangeslider initialization
+    $element.rangeslider({
+        // Deactivate the feature detection
+        polyfill: false,
+
+        // Callback function
+        onInit: function () {},
+
+        // Callback function
+        onSlide: function (position, value) {
+            // console.log('onSlide');
+            console.log('position: ' + position, 'value: ' + value);
+        },
+        // Callback function
+        onSlideEnd: function (position, value) {
+            // console.log('onSlideEnd');
+            console.log('position: ' + position, 'value: ' + value);
+        }
+    });
+});
+</script>
+<div class="form-common-box">
+<div class="widget_form_header">
+    <div class="col-md-8 col-xs-8">
+        <h3 class="text-left">ICICI Bank Home Loan - Apply Online  & your CIBIL score absolutely FREE.</h3>
+    </div>
+    <div class="cibil_tag"></div>
+    <div class="clearfix"></div>
+</div>
+<div class="form-main-wrapper">
+    <div class="container container-full-width">
+        <form name="loan_form" method="post" action="/apply-home-loans-step_cibil.php" onSubmit="return chkform();">
+            <input type="hidden" name="PostURL" value="/icici-hfc-home-loan.php">
+            <input type="hidden" name="Cfcount" id="Cfcount" value="0">
+            <input type="hidden" name="Activate" id="Activate" >
+            <input type="hidden" name="source" value="IH SEO 1">
+            <div class="form_pd_head">Loan Amount</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="js-example-change-value">
+                        <input type="range" min="800000" max="15000000" step="100000" value="2000000"  onChange="intOnly(this);
+                                getDiToWordsIncome('Loan_Amount_Range', 'RangeFormatedIncome', 'RangeWordIncome');
+                               " id="Loan_Amount_Range" data-rangeslider>
+                        <output></output>
+                        <input type="number" value="2000000" step="100000" name="Loan_Amount" id="Loan_Amount" onkeyup="intOnly(this); getDiToWordsIncome('Loan_Amount', 'RangeFormatedIncome', 'RangeWordIncome');" class="form-output">
+                    </div>
+                    <div id="RangeFormatedIncome" style="display:none;"></div>
+                    <div id="RangeWordIncome" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-label-text">Occupation</div>
+                    <select name="Employment_Status" id="hl_occupation">
+                        <option value="-1">Select Occupation</option>
+                        <option value="1">Salaried</option>
+                        <option value="0">Self Employed</option>
+                    </select>
+                    <i class="fa fa-caret-down caret_negative_mr" aria-hidden="true"></i>
+                    <div id="hl_occup_txt_err" class="text_error" style="display:none;">Select Employment Status to Continue!</div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-label-text">Annual Income</div>
+                    <input name="Net_Salary" id="Net_Salary" maxlength="9" onkeyup="intOnly(this);
+                            getDiToWordsIncome('Net_Salary', 'formatedIncome', 'wordIncome');" autocomplete="off">
+                    <div id="netSalaryVal" class="text_error" style="display:none;"></div>
+                    <span id="formatedIncome" style="display: none;"></span> <span id="wordIncome" style="display: none;"></span> 
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-label-text">City</div>
+                    <select name="City" id="City">
+                        <option value="">Select City</option>
+                        <option value="Please Select">Please Select</option><option value="Ahmedabad">Ahmedabad</option><option value="Aurangabad">Aurangabad</option><option value="Bangalore">Bangalore</option><option value="Baroda">Baroda</option><option value="Bhiwadi">Bhiwadi</option><option value="Bhopal">Bhopal</option><option value="Bhubneshwar">Bhubneshwar</option><option value="Chandigarh">Chandigarh</option><option value="Chennai">Chennai</option><option value="Cochin">Cochin</option><option value="Coimbatore">Coimbatore</option><option value="Cuttack">Cuttack</option><option value="Dehradun">Dehradun</option><option value="Delhi">Delhi</option><option value="Faridabad">Faridabad</option><option value="Gaziabad">Gaziabad</option><option value="Gurgaon">Gurgaon</option><option value="Guwahati">Guwahati</option><option value="Hosur">Hosur</option><option value="Hyderabad">Hyderabad</option><option value="Indore">Indore</option><option value="Jabalpur">Jabalpur</option><option value="Jaipur">Jaipur</option><option value="Jamshedpur">Jamshedpur</option><option value="Kanpur">Kanpur</option><option value="Kochi">Kochi</option><option value="Kolkata">Kolkata</option><option value="Lucknow">Lucknow</option><option value="Ludhiana">Ludhiana</option><option value="Madurai">Madurai</option><option value="Mangalore">Mangalore</option><option value="Mysore">Mysore</option><option value="Mumbai">Mumbai</option><option value="Nagpur">Nagpur</option><option value="Nasik">Nasik</option><option value="Navi Mumbai">Navi Mumbai</option><option value="Noida">Noida</option><option value="Patna">Patna</option><option value="Pune">Pune</option><option value="Ranchi">Ranchi</option><option value="Raipur">Raipur</option><option value="Rewari">Rewari</option><option value="Sahibabad">Sahibabad</option><option value="Surat">Surat</option><option value="Thane">Thane</option><option value="Thiruvananthapuram">Thiruvananthapuram</option><option value="Trivandrum">Trivandrum</option><option value="Trichy">Trichy</option><option value="Vadodara">Vadodara</option><option value="Vishakapatanam">Vishakapatanam</option><option value="Vizag">Vizag</option><option value="Others">Others</option>                        </select>
+                    <i class="fa fa-caret-down caret_negative_mr" aria-hidden="true"></i>
+                    <div id="city_txt_err" style="display:none;">Select City to Continue!</div>
+                    <div style="display:none;" id="otherCityDisp">
+                        <input name="City_Other" id="City_Other" type="text" placeholder="Other City" onkeypress="return isCharsetKey(event)"/>
+                        <div id="othercityVal" class="text_error"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none;" id="second_stage">
+                <div class="row">
+                    <div class="col-md-12 form_pd_head pd-tp30 no_btm_pd">Personal Details</div>
+                    <div class="col-md-12 col-xs-12 privacy_txt"><i class="fa fa-lock lock_fa"></i>Your Information is secure with us and will not be shared without your consent</div>
+                    <div class="col-md-4">
+                        <div class="form-label-text">First Name</div>
+                                                    <input type="text"  name="first_name" id="first_name" autocomplete="off" maxlength="25" onkeypress="return isCharsetKey(event)"/>
+                                                    <div id="firstnameVal" class="text_error" style="display:none;"></div>
+                    </div>	
+                    <div class="col-md-4">
+                        <div class="form-label-text">Middle Name</div>
+                        <input type="text" name="middle_name" id="middle_name" maxlength="25" autocomplete="off" onkeypress="return isCharsetKey(event)"  />
+                        <div id="middlenameVal" class="text_error" style="display:none;"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-label-text">Last Name</div>
+                        <input type="text" name="last_name" id="last_name" maxlength="25" autocomplete="off" onkeypress="return isCharsetKey(event)"  />
+                        <div id="lastnameVal" class="text_error" style="display:none;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-label-text">E-mail Id</div>
+                        <input  type="text" name="Email" id="Email"  autocomplete="off" />
+                        <div id="emailVal" class="text_error" style="display:none;"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-label-text">Mobile No.</div>
+                        <input type="text" name="Phone" id="Phone" maxlength="10" onkeyup="intOnly(this);" />
+                        <div id="phoneVal" class="text_error" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>	
+            <div class="row mar_tp_20">
+                <div class="col-md-9">
+                    <div class="checkbox">
+                        <label>
+                            <div class="tc_error"></div>
+                            <input type="checkbox" class="custom_checkbox" name="accept"> <span class="privacy_text wp_check_custom-pd">I authorize Deal4loans.com &amp; its <a href="http://www.deal4loans.com/hl-partnering-banks.php" target="_blank" rel="nofollow">partnering banks</a> to contact me to explain the product &amp; I Agree to <a href="http://www.deal4loans.com/Privacy.php" target="_blank" rel="nofollow">Privacy policy</a> and <a href="http://www.deal4loans.com/Privacy.php" target="_blank" rel="nofollow">Terms and Conditions</a>.
+                            </span></label>
+                    </div>
+                    <div id="TermConditionVal" class="text_error"></div>
+                </div>
+            </div>
+            <div class="row mar_tp_20">
+                <div class="col-md-3 col-md-push-9 text-center">
+                    <button type="submit" id="submit_hl"  onClick="ga('send', 'event', 'Get Home Loan Quote', 'Get Quote Home');">Get Quote</button>
+                </div>
+                <div class="col-md-9 col-md-pull-3 mar_tp_20">
+                    <div class="hl_digit_count"><span>54,02,013</span> loan quotes taken till now.</div>
+                    <div class="hl_form_list">
+                        &#9658; Home Loan Rates starts from As low as 6.70%<br>
+                        &#9658; Compare Top Banks – SBI, HDFC Ltd, ICICI Bank, PNB Housing etc.
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </div>
+</div>
+</div>
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script src="homeloan-js/jquery-ui-1.min.js"></script>
+<script type="text/javascript">
+var jq = jQuery.noConflict();
+jq(document).ready(function () {
+    jq('#City').on('change', function () {
+        var Residencecity = jq('#City').val();
+        var Income = jq('#Net_Salary').val();
+        jq.ajax({
+            type: 'POST',
+            url: 'otherprocesses/widget_sbicards_process.php',
+            data: {
+                city: Residencecity,
+                income: Income
+            },
+            success: function (response) {
+                jq('#other_processes').html(response);
+            }
+        });
+    });
+});
+</script>
+                    <div>
+                        <h3><b>ICICI Bank Home Loan offers you Home Loan for following purposes</b></h3><ol>
+                            <li><b>Home Loan</b>- If you want to purchase a new home then you can apply individually or jointly.</li>
+                            <li><b>Home Improvement Loan-</b> For your home improvement you can take the Home Improvement Loan from ICICI Bank.</li>
+                            <li><b>EMI Under Construction-</b> EMI Under Construction helps you to make payments in EMI, in a partly sanctioned loan for an under construction project.</li>
+                            <li><b>Balance Transfer-</b>ICICI Bank Home Loan gives you facility to transfer your running loan from an other Bank</li>
+                            <li><b>Top-Up Loan- </b>ICICI Bank Home Loan facilitates the Top-Up Loan, an additional funding against the security of your property.</li>
+                        </ol>
+                    </div>
+
+                    <ol>
+                        <li>*AT – Applicable taxes.</li>
+                        <li>Lower of standard fee or special applicable fee as given above would be applicable.</li>
+                        <li>Currently PF is capped at 10,000 excluding service taxes in case of all online cases. However, this offer might change and value will be changed accordingly.</li>
+                        <li>In case of BT Top Up, PF would be calculated separately - PF for BT and PF for Top Up.</li>
+                    </ol>
+                    <h3>ICICI Bank Home Loan Interest Rates 2022 (Updated as on 12 Jan 2022)</h3>
+                    Check latest and updated interest rates of ICICI Bank home loans. you can also compare ICICI bank home loans with other banks interest rates <a href="https://www.deal4loans.com/home-loans.php"><strong>here</strong></a>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+
+<tbody>
+
+<tr>
+
+<td colspan="6" width="100%"><strong>Special Rates - Home Loan </strong></td>
+
+</tr>
+
+<tr>
+
+<td><strong>CIBIL Scoring</strong></td>
+
+<td><strong>&gt;=800</strong></td>
+
+<td><strong>&gt;750-800</strong></td>
+
+<td><strong>700-749</strong></td>
+
+<td><strong>NTC</strong></td>
+
+<td><strong>&lt;=700</strong></td>
+
+</tr>
+
+<tr>
+
+<td colspan="6" width="100%"><strong>Salaried**</strong></td>
+
+</tr>
+
+<tr>
+
+<td>Upto 35 Lakh</td>
+
+<td>6.70%</td>
+
+<td>6.75%</td>
+
+<td>7.00%</td>
+
+<td>7.10%</td>
+
+<td>7.15%</td>
+
+</tr>
+
+<tr>
+
+<td>&gt; 35 Lakh &lt;=75 Lakh</td>
+
+<td>6.70%</td>
+
+<td>7.00%</td>
+
+<td>7.10%</td>
+
+<td>7.25%</td>
+
+<td>7.30%</td>
+
+</tr>
+
+<tr>
+
+<td>&gt;75 Lakh</td>
+
+<td>6.70%</td>
+
+<td>7.10%</td>
+
+<td>7.20%</td>
+
+<td>7.35%</td>
+
+<td>7.40%</td>
+
+</tr>
+
+<tr>
+
+<td colspan="6" width="100%"><strong>Self-Employed**</strong></td>
+
+</tr>
+
+<tr>
+
+<td>Upto 35 Lakh</td>
+
+<td>6.80%</td>
+
+<td>6.90%</td>
+
+<td>7.15%</td>
+
+<td>7.25%</td>
+
+<td>7.30%</td>
+
+</tr>
+
+<tr>
+
+<td>&gt; 35 Lakh &lt;=75 Lakh</td>
+
+<td>6.80%</td>
+
+<td>7.15%</td>
+
+<td>7.25%</td>
+
+<td>7.40%</td>
+
+<td>7.45%</td>
+
+</tr>
+
+<tr>
+
+<td>&gt;75 Lakh</td>
+
+<td>6.80%</td>
+
+<td>7.25%</td>
+
+<td>7.35%</td>
+
+<td>7.50%</td>
+
+<td>7.55%</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td colspan="5" width="588"><strong>Special Pricing for Non-Home Loan</strong></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td colspan="5" width="588"><strong>Non-HL ( LAP, NRP, LRD, Non HL Top-up)</strong></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td><strong>Cibil Scoring</strong></td>
+
+<td><strong>&gt;750</strong></td>
+
+<td><strong>701-749</strong></td>
+
+<td><strong>NTC</strong></td>
+
+<td><strong>&lt;=700</strong></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>&gt;100 Lacs</td>
+
+<td>8.35%</td>
+
+<td>8.75%</td>
+
+<td>8.75%</td>
+
+<td>9.00%</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>50 - 100 Lacs</td>
+
+<td>8.60%</td>
+
+<td>9.00%</td>
+
+<td>9.00%</td>
+
+<td>9.25%</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>&lt;=50 Lacs</td>
+
+<td>8.85%</td>
+
+<td>9.25%</td>
+
+<td>9.25%</td>
+
+<td>9.50%</td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+                    </div>
+                    <h3>30 Year Home Loan from ICICI Bank</h3>
+                    <p>Now more peace of mind to your imagination and get your dream home with ICICI Bank 30 - year Home Loans. With a longer repayment tenure, you can avail higher <a href="/" target="_blank" rel="noopener">loan</a> amount and still keep your EMIs small.</p>
+                    <ul>
+                        <li>Attractive floating and fixed interest rates options</li>
+                        <li>EMI as low as 783* per lakh</li>
+                        <li>Longer repayment tenure up to 30 years</li>
+                        <li><a href="https://www.deal4loans.com/home-loan-eligibility-calculator.php" target="_blank" rel="noopener">Higher loan eligibility</a></li>
+                    </ul>
+                    <p>30 year Home loans are available for women borrower and for applicants working for select group of companies.</p>
+                    <h3>ICICI Bank Offers Home Loans under various Schemes</h3>
+                    <p>ICICI Bank offers housing loan schemes under various names such as:</p>
+                    <p><strong>ICICI Bank Extraa Home Loans</strong> - allow you to enhance your loan amount by up to 20% and also provide you an option to extend the repayment period up to 67 years of age. This facility provides the dual advantage of improved affordability and a longer repayment period.</p>
+                    <p><strong>ICICI Bank Pragati Home Loans</strong> - Witness your dream of owning a house turn into reality with ICICI Bank Pragati Home Loans. Home Loans offered to affordable housing segment.</p>
+                    <p><strong>Pradhan Mantri Awas Yojana - </strong>ICICI Bank is pleased to offer "Credit Linked Subsidy Scheme" for EWS and LIG categories under <a href="https://www.deal4loans.com/loans/articles/3-housing-schemes-launched-by-narendra-modi/">Pradhan Mantri Awas Yojana</a>. The scheme was announced by our honourable Prime Minister Narendra Modi and envisages the vision of housing for all by the year 2022.</p>
+                    <p><strong>Balance Transfer Home Loan - </strong>Lower your EMI burden by transferring your existing home loan to ICICI Bank!</p>
+                    <p>You can transfer your existing Home Loan from other Banks and Non Banking Financial Companies (NBFCs) to ICICI Bank and enjoy long term savings.</p>
+                    <p><a href="https://www.deal4loans.com/home-loan-balance-transfer-calculator.php">Calculate your savings on home loan balance transfer here</a></p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Attractive interest rate</li>
+                        <li>Simplified documentation</li>
+                        <li>Additional top-up loan amount up to 100% of the original home loan.
+                            Terms and Conditions apply.</li>
+                    </ul>
+                    <p><strong>Top Up Loan linked to Home Loan - </strong>availed by home loans customers against their property and can be used to fulfil their immediate needs. Further, since the tenure of the loan is the same as the existing home loan tenure, payment of EMIs becomes easy.</p>
+                    <p><strong>Home Improvement Loans</strong> - offered to facilitate improvement of a self-owned dwelling unit to existing or new customers. Thus, you can add or improve facilities in your dwelling unit through a loan at lower rate of interest.</p>
+                    <p><strong>Land Loan</strong> - provide you an opportunity to purchase a residential plot of land for self-construction. You can choose to invest in a residential plot of land today and plan for a self-construction in future. However, the construction of property has to be completed within two years from the date of first disbursement of the loan.</p>
+                    <p><strong>Office Premises Loan ( Non Residential Property) - </strong>A self-employed businessman or professional needs a permanent address to set up his business. ICICI Bank's Non-Residential Premises Loans makes it easy and convenient to do that. The loan covers purchase, construction, extension and improvement of your customer's office premises. The loan may also be packaged to include the estimated renovation expenses.</p>
+                    <h3>About ICICI Bank:</h3>
+                    <p>ICICI Bank Express Home loan offers online sanction of loan within 8 hours. ICICI Bank offers <strong>8.10%</strong> interest rates for women borrowers. Maximum tenure period of 30 years. Borrowers can switch to ICICI bank with Top Up facility. ICICI Bank well known for its high eligibility &amp; lower interest rates &amp; sanction time.</p>
+                    <p><em>Borrowers can also check the approved projects list of ICICI Bank for Agra, Ahmedabad, Amritsar, Bengaluru, Biwadi, Bhopal, Chandigarh, Chennai, Coimbatore, Dehradun, Faridabad, Gandhi Nagar, Ghaziabad, Goa, Greater Noida, Gurgaon, Hyderabad, Indore, Jaipur, Kochi, Kolkata, Lucknow, Ludhiana, Mangalore, Mohali, Mumbai, Mysore, Nagpur, Nashik, Navi Mumbai, New Delhi, Noida, Panipat, Pune, Raipur, Sonepat, Thane, Trivandrum, Vadodara, Visakhapatnam.</em></p>
+                    <blockquote>Calculate <a href="https://www.deal4loans.com/loans/calculators/icici-home-loan-eligibility-calculator-emi-calculate/">ICICI Bank Home Loan EMI with Calculator</a></blockquote>
+                    <h3><strong>ICICI Bank Home Loan Application Status</strong></h3>
+                    <p>Moreover, application processing through our TABLET and Smart phone applications ensures faster approval of your home loan.</p>
+
+                    <p>Enter Your <strong>Reference Number</strong> or <strong>Form Number</strong> To check the status of your loan application, please enter your Reference Number or Form Number and click on the 'Submit' button. (<a href="https://apsweb.icicibank.com/LoanAtClick/CheckStatus.jsp">Here</a>)</p>
+                    <h3><b>Features &amp; Benefits of ICICI Bank Home Loan</b></h3>
+                    <ul>
+                        <li><a href="https://www.deal4loans.com/home-loans-interest-rates.php">Attractive Home Loan Rates</a></li>
+                        <li>No charges on part pre-payment of your Home Loan</li>
+                        <li>Top Up &amp; Home Improvement Loan facility available on existing Home Loan</li>
+                        <li>Home loan amounts suited to your needs</li>
+                        <li>Home Loan tenure upto 30 years</li>
+                        <li>Simplified Documentation</li>
+                        <li>Doorstep Delivery of home loan papers</li>
+                        <li>Sanction approval without having selected a property.</li>
+                        <li>Free Personal Accident Insurance policies</li>
+                        <li>Insurance options for your home loan at attractive premium</li>
+                    </ul>
+                    <h3>Documentation required for ICICI Bank Home Loan</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Criteria</strong></td>
+                                    <td><strong>Salaried</strong></td>
+                                    <td><strong>Self employed</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>21years to 65years</td>
+                                    <td>21years to 65years</td>
+                                </tr>
+                                <tr>
+                                    <td>Income</td>
+                                    <td>Rs.2,16,000 (p.a)</td>
+                                    <td>Rs.2,16,000 (p.a)</td>
+                                </tr>
+                                <tr>
+                                    <td>Loan Amount Offered</td>
+                                    <td>8,00,000 - 1,00,00000</td>
+                                    <td>8,00,000 - 2,00,00000</td>
+                                </tr>
+                                <tr>
+                                    <td>Tenure</td>
+                                    <td>5years-30years</td>
+                                    <td>5years-20years</td>
+                                </tr>
+                                <tr>
+                                    <td>Current Experience</td>
+                                    <td>1years</td>
+                                    <td>3years</td>
+                                </tr>
+                                <tr>
+                                    <td>Processing Fee</td>
+                                    <td>Rs.3000 + AT</td>
+                                    <td>Rs.3000 + AT</td>
+                                </tr>
+                                <tr>
+                                    <td>Documentation</td>
+                                    <td>1) Application form with photograph
+                                        2) Identity &amp; residence proof
+                                        3) Latest salary slip
+                                        4) Form 16
+                                        5) Last 6 months bank statements
+                                        6) Processing fee cheque</td>
+                                    <td>1) Application form with photograph
+                                        2) Identity &amp; residence proof
+                                        3) Proof of business existence
+                                        4) Profile of the Business
+                                        5) Last 3years ITR
+                                        6) Last 6 months bank statements
+                                        7) Processing fee cheque</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Close your ICICI Bank home loan? What are the charges for prepaying loan?</strong></p>
+                    <p><em><strong>The prepayment charges are as under:</strong></em></p>
+                    <ul>
+                        <li>Nil for Home Loans and Home Improvement Loans with floating rate of interest.</li>
+                        <li>2% plus applicable taxes on principal outstanding* on full repayment for Home Loans with fixed rate of interest.</li>
+                        <li>2% plus applicable taxes on principal outstanding* on full repayment for Home Loan Top Up loan if the applicant or co-applicant is Non Individual.</li>
+                        <li>4% plus applicable taxes on principal outstanding* where loan** is given to Non Individual borrowers or with fixed rate of interest to Individual borrowers. If the loan is sanctioned prior to March 1, 2011 then prepayment charges would be 2% plus applicable taxes.</li>
+                        <li>*Current principal outstanding and all amounts tendered by the borrower towards prepayment of the Facility during the last one year from the date of final prepayment.</li>
+                    </ul>
+                    <p>**Home Equity Loan/Home Equity Enhancement Loan, Office Premises Loan and Lease Rental Discounting Loan.</p>
+                    <p><strong>Available Products of ICICI Bank are</strong>:</p>
+                    <ul>
+                        <li><a href="https://www.deal4loans.com/personal-loan-icici-bank.php">ICICI Personal Loan</a></li>
+                        <li><a href="https://www.deal4loans.com/icici-hfc-home-loan.php">ICICI Home Loan</a></li>
+                        <li><a href="https://www.deal4loans.com/loans/car-loan/icici-bank-car-loans/">ICICI Car Loan</a></li>
+                        <li><a href="https://www.deal4loans.com/loans/credit-card/icici-bank-credit-cards-eligibility-documents-apply/" target="_blank" rel="noopener">ICICI Credit Card</a></li>
+                        <li><a href="https://www.deal4loans.com/bankbranch/fixed-deposit/icici-bank-fixed-deposit-interest-rates/" target="_blank" rel="noopener">ICICI Bank Fixed Deposits</a></li>
+                        <li><a href="https://www.deal4loans.com/loans/loan/gold-loan-loan/icici-bank-loan-against-gold-ornaments-interest-rates-documents-eligibility/" target="_blank" rel="noopener">ICICI Bank Gold Loan</a></li>
+                        <li><a href="https://www.deal4loans.com/property-loan/icici" target="_blank" rel="noopener">ICICI Bank Loan Against Property</a></li>
+                        <li><a href="https://www.deal4loans.com/loans/loan/icici-bank-business-loans-eligibility-interest-rates-apply/" target="_blank" rel="noopener">ICICI Bank Business Loan</a></li>
+                    </ul>
+                    <span class="termtext"><b>Disclaimer :</b> Please note that the interest rates and  eligibility criteria given here are based on the market research. To enable the  comparisons certain set of data has been reorganized / restructured / tabulated. Users are advised to recheck the same with the individual companies /  organizations. This site does not take any responsibility for any sudden /  uninformed changes in interest rates.</span><br />
+                    <a href="home-loans-interest-rates.php"  class="blue-text" style="text-decoration:underline;"><b>Compare Home Loan Rate of interest</b></a><br/>
+                </div>
+            </div>
+        </section>
+</main>
+
+
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-area">
+        <div class="container">
+           <div class="footer-top footer-padding">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                </div>
+                                <div class="footer-pera">
+                                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Link</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Offers & Discounts</a></li>
+                                    <li><a href="#">Get Coupon</a></li>
+                                    <li><a href="#"> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>New Products</h4>
+                                <ul>
+                                    <li><a href="#">Woman Cloth</a></li>
+                                    <li><a href="#">Fashion Accessories</a></li>
+                                    <li><a href="#">Man Accessories</a></li>
+                                    <li><a href="#">Rubber made Toys</a></li>     
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#"> Privacy Policy</a></li>
+                                    <li><a href="#">Report a Payment Issue</a></li>     
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="footer-bottom">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="footer-copy-right">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <!-- Footer Social -->
+                        <div class="footer-social f-right">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+
+
+<!-- JS here -->
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Nice-select, sticky -->
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
